@@ -37,7 +37,7 @@ The blue circles are the positions of the clients. The position of the depot is 
 
 The red lines show the path of a vehicle that starts from the depot and passes successively through all the clients within the group before returning to the depot.
 
-By applying the Sweep Heuristic algorithm, we get 6 groups of clients. So, we need 6 vehicles to make the delivery. The table below shows the number of clients in each group and the aggregate distance covered by each vehicle.
+By applying Sweep Heuristic algorithm, we get 6 groups of clients. So, we need 6 vehicles to make the delivery. The table below shows the number of clients in each group and the aggregate distance covered by each vehicle.
 
 |Group| I | II | III | IV | V | VI |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
