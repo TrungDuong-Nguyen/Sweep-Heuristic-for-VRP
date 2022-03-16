@@ -8,7 +8,7 @@ The heuristic determines groups of clients (angular sectors) that are compatible
 
 <br>
 
-![](/Sweep-Heuristic_Illustration.png)
+![](/Figures/Sweep-Heuristic_Illustration.png)
 
 <br>
 
@@ -31,7 +31,7 @@ We see that following the Sweep Heuristic Algorithm, the aggregate distance trav
 
 The figure below shows the route of the vehicles:
 
-![](/vrpnc1.jpg)
+![](/Figures/vrpnc1.jpg)
 
 The blue circles are the positions of the clients. The position of the depot is identified by the green square. 
 
@@ -56,7 +56,7 @@ Although it is not reported here, the computation could obviously provide us wit
 
 The figure below shows the route of the vehicles:
 
-![](/vrpnc2.jpg)
+![](/Figures/vrpnc2.jpg)
 
 In this case, we get 11 client groups. Therefore, 11 vehicles are needed to make the delivery. The number of clients in each group and the aggregate distance traveled by each vehicle are presented in the table below.
 
