@@ -1,15 +1,14 @@
 % --------------------------------------------------------------------- %
-% @Function     divide_group
-% @Brief       Calculate the distance between clients in each group
-% @Input Parameters     
-%              newX, newY  Coordinates of the clients (increasing angle order)
-%              G           Matrix that show the first and the last client in        %                          each group
-% @Output Parameters       
-%              C           Matrix that show the distance between clients in 
-%                          each group
-%               
-% @Author      NGUYEN Trung Duong – Student Master OSS - UTT
-% @Date        2013/01/04
+% @Function    divide_group
+% @Brief       Calculate the distances between clients in each group
+% @Input Parameters
+%              newX, newY  Coordinates of the clients (increasing angle
+%              order)
+%              G           Matrix that shows the first and the last client in each group
+% @Output Parameters
+%              C           Matrix that shows the distances between clients in each group
+%
+% @Programmer  NGUYEN Trung Duong
 % --------------------------------------------------------------------- %
 function C = distance_matrix(newX, newY, G)
 

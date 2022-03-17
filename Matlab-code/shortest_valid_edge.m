@@ -1,20 +1,18 @@
 % --------------------------------------------------------------------- %
 % @Function    shortest_valid_edge
 % @Brief       Search for the shortest valid_edge in the information table
-% @Input Parameters     
-%              Info          “Structure array” data type that specifies the 
-%                            distances of edges (increasing order), the  
-%                            coordinates of their starting and ending nodes 
-%              Invalid_Edge  List of edges that make an incorrect cycle (do 
-%                            not pass all clients and depot in each group)
-%              t             Intermediate parameters
-% @Output Parameters       
-%              node1          Starting node of the selected edge 
-%              node2          Ending node of the selected edge 
-%              Row            Position of the selected edge in the information %                             table    
+% @Input Parameters
+%              Info          Structure array that specifies the length of edges (increasing order),...
+%                            and the coordinates of their starting and ending node
+%              Invalid_Edge  List of edges that may create an incorrect cycle...
+%                            (i.e., that do not pass all clients and depot within the group)
+%              t             Temporary variable
+% @Output Parameters
+%              node1          Starting node of the selected edge
+%              node2          Ending node of the selected edge
+%              Row            Row index of the selected edge in the information table
 %
-% @Author      NGUYEN Trung Duong – Student Master OSS - UTT
-% @Date        2013/01/04
+% @Programmer  NGUYEN Trung Duong
 % --------------------------------------------------------------------- %
 
 function [node1, node2, Row] = shortest_valid_edge(Info, Invalid_Edge, t)
