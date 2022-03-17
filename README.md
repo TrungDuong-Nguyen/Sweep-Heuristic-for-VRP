@@ -1,8 +1,9 @@
 # Sweep Heuristic for vehicle routing problem
 
-## Subject
+## Approach
 The goal is to program the sweep heuristic for a Vehicle Routing Problem (VRP). 
-Suppose that we already have the coordinates (_x0_, _y0_) of the depot, and the coordinates (_xi_, _yi_) of each client (_i = 1, 2, ..., N_). We also know the demands (_qi_) of the customers and the capacity _Q_ of the vehicles. The number of vehicles is sufficiently large. 
+
+Suppose that we already have the coordinates (_x0_, _y0_) of the depot, and the coordinates (_xi_, _yi_) of each client (_i = 1, 2, ..., N_). We also know the demands (_qi_) of the clients and the capacity _Q_ of the vehicles. The number of vehicles is sufficiently large. 
 
 The heuristic determines groups of clients (angular sectors) that are compatible with the capacity of the vehicles, then solves a TSP problem for each group. To determine the groups, we create a half-line that starts from the depot and passes through any client, then we rotate this half-line in a chosen direction (counter-clockwise direction, see the Figure below). Each time the cumulative demands of the clients within the current group exceed the vehicle’s capacity, we create a new group. The simplest way is to rank the clients following the increasing order of their polar angles relative to the repository (which corresponds to a horizontal half-line leading to the right of the depot), and to cut the sorted list got. Next, we apply the multi-fragment heuristic to solve the TSP problem for each group.
 
@@ -12,8 +13,10 @@ The heuristic determines groups of clients (angular sectors) that are compatible
 
 <br>
 
-## Test data
+## Test data and Matlab code
 Folder [Test-data](/Test-data/) contains 2 files `vrpnc1.txt` (50 clients) and `vrpnc2.txt` (75 clients) used to test the Sweep Heuristic algorithm. I also provide an explanation of the text files's format in this folder.
+
+The Matlab implementation of this algorithm is at folder [Matlab-code](/Matlab-code/). We also found there the solution flowchart together with a short recapitulation of the built-in Matlab functions.
 
 <br>
 
@@ -44,7 +47,7 @@ By applying Sweep Heuristic algorithm, we get 6 groups of clients. So, we need 6
 | Number of clients  | 10  | 11 | 6 | 11 | 10 | 2 |
 | Distance  | 102.7469|110.6773|89.0586|88.9029|91.2404|58.7481|
 
-Although it is not reported here, the computation could obviously provide us with a list of client in each group so that we can calculate the clients's total demand within each group. We can verify that this value is surely smaller than the capicity Q of the vehicle.
+Although it is not reported here, the computation could obviously provide us with a list of client in each group, thus we can calculate the clients's total demand within the group. We can verify that this value is smaller than the capicity _Q_ of the vehicle.
 
 <br>
 
