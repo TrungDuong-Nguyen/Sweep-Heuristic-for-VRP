@@ -10,8 +10,34 @@ The heuristic determines groups of clients (angular sectors) that are compatible
 <br>
 
 ![](/Figures/Sweep-Heuristic_Illustration.png)
+<figcaption>The Amazon Rainforest contains a multitude of species.</figcaption>
 
 <br>
+
+![](/Figures/Sweep-Heuristic_Illustration.png)
+*The Amazon Rainforest contains a multitude of species*
+
+<br>
+
+| ![](/Figures/Sweep-Heuristic_Illustration.png) | 
+|:--:| 
+| *The Amazon Rainforest contains a multitude of species* |
+
+<br>
+
+
+
+<p>
+<img src="/Figures/Sweep-Heuristic_Illustration.png" alt="alt attribute goes here!" title="This is a Title"/>
+</p>
+
+
+
+{% include image1.html 
+url="/Figures/Sweep-Heuristic_Illustration.png" description="The Amazon Rainforest contains a multitude of species" %}
+
+{% include image2.html 
+img="/Figures/Sweep-Heuristic_Illustration.png" title="" caption="2" %}
 
 ## Test data and Matlab code
 Folder [Test-data](/Test-data/) contains 2 files `vrpnc1.txt` (50 clients) and `vrpnc2.txt` (75 clients) used to test the Sweep Heuristic algorithm. I also provide an explanation of the text files's format in this folder.
