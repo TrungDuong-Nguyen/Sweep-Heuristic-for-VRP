@@ -9,36 +9,11 @@ The heuristic determines groups of clients (angular sectors) that are compatible
 
 <br>
 
-![](/Figures/Sweep-Heuristic_Illustration.png)
-<figcaption>The Amazon Rainforest contains a multitude of species.</figcaption>
-
-<br>
-
-
-![](/Figures/Sweep-Heuristic_Illustration.png)
-*The Amazon Rainforest contains a multitude of species*
-
-<br>
-
-| ![](/Figures/Sweep-Heuristic_Illustration.png) | 
+| <img align="center" width=450 height=450 src="https://github.com/TrungDuong-Nguyen/Sweep-Heuristic-for-VRP/blob/main/Figures/Sweep-Heuristic_Illustration.png"> | 
 |:--:| 
-| *The Amazon Rainforest contains a multitude of species* |
+| *Illustration of Sweep Heuristic Algorithm.* |
 
 <br>
-
-
-
-<p>
-<img src="/Figures/Sweep-Heuristic_Illustration.png" alt="alt attribute goes here!" title="This is a Title"/>
-</p>
-
-
-
-{% include image1.html 
-url="/Figures/Sweep-Heuristic_Illustration.png" description="The Amazon Rainforest contains a multitude of species" %}
-
-{% include image2.html 
-img="/Figures/Sweep-Heuristic_Illustration.png" title="" caption="2" %}
 
 ## Test data and Matlab code
 Folder [Test-data](/Test-data/) contains 2 files `vrpnc1.txt` (50 clients) and `vrpnc2.txt` (75 clients) used to test the Sweep Heuristic algorithm. I also provide an explanation of the text files's format in this folder.
@@ -56,11 +31,13 @@ The Matlab implementation of this algorithm is at folder [Matlab-code](/Matlab-c
 |:---:|:---:|:---:|
 | Aggregate distance  | 524.61  |541.3742 <br /> (3.2 % larger)|
 
-We see that following the Sweep Heuristic Algorithm, the aggregate distance traveled by the vehicles are a little larger than the optimal one.
+We see that with Sweep Heuristic Algorithm, the aggregate distance traveled by the vehicles are a little larger than the optimal one.
 
 The figure below shows the route of the vehicles:
 
-![](/Figures/vrpnc1.jpg)
+|<img align="center" src="https://github.com/TrungDuong-Nguyen/Sweep-Heuristic-for-VRP/blob/main/Figures/vrpnc1.jpg"> |
+|:--:| 
+| *Vehicle routes in instance `vrpnc1`.* |
 
 The blue circles are the positions of the clients. The position of the depot is identified by the green square. 
 
@@ -81,11 +58,11 @@ Although it is not reported here, the computation could obviously provide us wit
 
 |   | Given solution| Solution found with <br /> Sweep Heuristic algorithm|
 |:---:|:---:|:---:|
-| Aggregate distance  | 835.26  |702.4725 <br /> (15.9 % shorter)
+| Aggregate distance  | 835.26  |702.4725 <br /> (15.9 % smaller)
 
-The figure below shows the route of the vehicles:
-
-![](/Figures/vrpnc2.jpg)
+|<img align="center" src="https://github.com/TrungDuong-Nguyen/Sweep-Heuristic-for-VRP/blob/main/Figures/vrpnc2.jpg"> |
+|:--:| 
+| *Vehicle routes in instance `vrpnc2`.* |
 
 In this case, we get 11 client groups. Therefore, 11 vehicles are needed to make the delivery. The number of clients in each group and the aggregate distance traveled by each vehicle are presented in the table below.
 
