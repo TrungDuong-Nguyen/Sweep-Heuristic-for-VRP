@@ -14,6 +14,7 @@ The heuristic determines groups of clients (angular sectors) that are compatible
 
 <br>
 
+
 ![](/Figures/Sweep-Heuristic_Illustration.png)
 *The Amazon Rainforest contains a multitude of species*
 
@@ -49,7 +50,6 @@ The Matlab implementation of this algorithm is at folder [Matlab-code](/Matlab-c
 ## Test Results
 
 ### Test file `vrpnc1.txt` (50 clients)
-
 
 
 |   | Optimal solution | Solution found with <br /> Sweep Heuristic algorithm|
